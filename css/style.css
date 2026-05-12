@@ -1805,3 +1805,6 @@ html[dir="ltr"] .team-info {
     border: 1px solid #C9A24E;
     transform: translateY(-3px);
 }
+li{
+    color: #000;
+}
