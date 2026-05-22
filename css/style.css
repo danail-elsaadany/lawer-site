@@ -1808,3 +1808,19 @@ html[dir="ltr"] .team-info {
 li{
     color: #000;
 }
+.lang-btn {
+    background: transparent;
+    border: 1px solid #c8a45d;
+    color: #c8a45d;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+.lang-btn:hover {
+    background: #c8a45d;
+    color: #fff;
+}

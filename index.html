@@ -31,7 +31,16 @@
             </div>
 
             <div class="menu-actions">
-                <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+
+    <!-- زر تغيير اللغة -->
+    <button id="lang-toggle" class="lang-btn">
+        EN
+    </button>
+
+    <div class="menu-toggle">
+        <i class="fas fa-bars"></i>
+    </div>
+
             </div>
 
             <nav class="nav-menu">
@@ -956,7 +965,39 @@ Office 1105, Iris Bay Tower, Business Bay, Dubai, UAE</li>
 
             window.open(url, "_blank");
         }
-    </script>
+    <script>
+const langBtn = document.getElementById("lang-toggle");
+
+langBtn.addEventListener("click", () => {
+
+    const html = document.documentElement;
+    const currentLang = html.lang;
+
+    if(currentLang === "ar") {
+
+        html.lang = "en";
+        html.dir = "ltr";
+
+        document.querySelectorAll("[data-en]").forEach(el => {
+            el.innerHTML = el.getAttribute("data-en");
+        });
+
+        langBtn.innerHTML = "AR";
+
+    } else {
+
+        html.lang = "ar";
+        html.dir = "rtl";
+
+        document.querySelectorAll("[data-ar]").forEach(el => {
+            el.innerHTML = el.getAttribute("data-ar");
+        });
+
+        langBtn.innerHTML = "EN";
+    }
+
+});
+</script>
 </body>
 
 </html>
