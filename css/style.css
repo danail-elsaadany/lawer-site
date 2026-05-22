@@ -1809,18 +1809,27 @@ li{
     color: #000;
 }
 .lang-btn {
-    background: transparent;
-    border: 1px solid #c8a45d;
-    color: #c8a45d;
-    padding: 8px 14px;
-    border-radius: 6px;
-    cursor: pointer;
+    background: #c8a45d;
+    color: #fff;
+    border: none;
+
+    padding: 10px 18px;
+
+    border-radius: 8px;
+
+    font-size: 14px;
     font-weight: bold;
-    margin-right: 10px;
+
+    cursor: pointer;
+
     transition: 0.3s;
+
+    min-width: 150px;
+
+    text-align: center;
 }
 
 .lang-btn:hover {
-    background: #c8a45d;
-    color: #fff;
+    background: #a8843f;
+    transform: translateY(-2px);
 }

@@ -355,3 +355,36 @@ document.querySelectorAll(".dropdown > a").forEach(a => {
         }
     });
 });
+// LANGUAGE TOGGLE
+const langBtn = document.getElementById("lang-toggle");
+
+if (langBtn) {
+
+    langBtn.addEventListener("click", () => {
+
+        const html = document.documentElement;
+        const currentLang = html.lang;
+
+        if (currentLang === "ar") {
+
+            html.lang = "en";
+            html.dir = "ltr";
+
+            document.querySelectorAll("[data-en]").forEach(el => {
+                el.innerHTML = el.getAttribute("data-en");
+            });
+
+        } else {
+
+            html.lang = "ar";
+            html.dir = "rtl";
+
+            document.querySelectorAll("[data-ar]").forEach(el => {
+                el.innerHTML = el.getAttribute("data-ar");
+            });
+
+        }
+
+    });
+
+}
