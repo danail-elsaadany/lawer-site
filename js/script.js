@@ -192,12 +192,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     applyGlobalContactData();
 
-    // Optional: Re-apply if translator modifies DOM
-    const originalUpdateLang = updateLanguage;
-    updateLanguage = function (lang) {
-        originalUpdateLang(lang);
-        applyGlobalContactData();
-    };
 });
 
 // HERO SLIDER AUTO SWITCH
