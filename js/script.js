@@ -362,29 +362,25 @@ if (langBtn) {
 
     langBtn.addEventListener("click", () => {
 
-        const html = document.documentElement;
-        const currentLang = html.lang;
+        const path = window.location.pathname;
 
-        if (currentLang === "ar") {
-
-            html.lang = "en";
-            html.dir = "ltr";
-
-            document.querySelectorAll("[data-en]").forEach(el => {
-                el.innerHTML = el.getAttribute("data-en");
-            });
-
-        } else {
-
-            html.lang = "ar";
-            html.dir = "rtl";
-
-            document.querySelectorAll("[data-ar]").forEach(el => {
-                el.innerHTML = el.getAttribute("data-ar");
-            });
-
+        if (path.includes("/ar/")) {
+            window.location.href = path.replace("/ar/", "/en/");
+        }
+        else if (path.includes("/en/")) {
+            window.location.href = path.replace("/en/", "/ar/");
+        }
+        else {
+            window.location.href = "/en/index.html";
         }
 
     });
 
+    const path = window.location.pathname;
+
+    if (path.includes("/ar/")) {
+        langBtn.textContent = "English";
+    } else {
+        langBtn.textContent = "العربية";
+    }
 }
