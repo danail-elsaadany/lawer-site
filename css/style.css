@@ -1833,8 +1833,11 @@ li{
     background: #a8843f;
     transform: translateY(-2px);
 }
-.mobile-lang {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+
+@media (max-width: 991px) {
+    .lang-btn {
+        display: block !important;
+        width: fit-content;
+        margin: 15px auto;
+    }
 }
