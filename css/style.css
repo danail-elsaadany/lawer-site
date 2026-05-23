@@ -1841,3 +1841,18 @@ li{
         margin: 15px auto;
     }
 }
+
+@media (min-width: 992px) {
+    .mobile-lang {
+        display: none !important;
+    }
+}
+
+@media (max-width: 991px) {
+    .mobile-lang {
+        display: inline-flex !important;
+        min-width: auto;
+        padding: 8px 12px;
+        margin: 0 10px;
+    }
+}
