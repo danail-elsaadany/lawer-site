@@ -1850,3 +1850,19 @@ li{
         display: none !important;
     }
 }
+.menu-actions .mobile-lang {
+    display: none !important;
+}
+
+@media (max-width: 991px) {
+    .menu-actions .mobile-lang {
+        display: inline-flex !important;
+        min-width: auto;
+        padding: 8px 12px;
+        margin: 0 10px;
+    }
+
+    .nav-links .lang-btn {
+        display: none !important;
+    }
+}
