@@ -1834,26 +1834,31 @@ li{
     transform: translateY(-2px);
 }
 
-/* الزر الجديد مخفي افتراضياً */
-.mobile-lang {
+/* زر الكمبيوتر */
+.desktop-lang-btn {
+    display: inline-flex;
+}
+
+/* زر الهاتف مخفي افتراضياً */
+.mobile-lang-btn {
     display: none;
 }
 
-/* في الهاتف فقط */
+/* إعدادات الهاتف */
 @media screen and (max-width: 991px) {
 
-    /* يظهر الزر الجديد */
-    .menu-actions .mobile-lang {
+    /* إخفاء زر الكمبيوتر */
+    .desktop-lang-btn {
+        display: none !important;
+    }
+
+    /* إظهار زر الهاتف */
+    .mobile-lang-btn {
         display: inline-flex !important;
         align-items: center;
         justify-content: center;
         min-width: auto;
         padding: 8px 12px;
         margin: 0 10px;
-    }
-
-    /* يخفي زر القائمة القديم */
-    .nav-links .lang-btn:not(.mobile-lang) {
-        display: none !important;
     }
 }
