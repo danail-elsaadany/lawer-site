@@ -1834,18 +1834,8 @@ li{
     transform: translateY(-2px);
 }
 
-@media (max-width: 991px) {
-    .lang-btn {
-        display: block !important;
-        width: fit-content;
-        margin: 15px auto;
-    }
-}
-
-@media (min-width: 992px) {
-    .mobile-lang {
-        display: none !important;
-    }
+.mobile-lang {
+    display: none !important;
 }
 
 @media (max-width: 991px) {
@@ -1854,5 +1844,9 @@ li{
         min-width: auto;
         padding: 8px 12px;
         margin: 0 10px;
+    }
+
+    .nav-links .lang-btn {
+        display: none !important;
     }
 }
