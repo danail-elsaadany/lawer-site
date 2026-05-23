@@ -1834,28 +1834,26 @@ li{
     transform: translateY(-2px);
 }
 
-header .menu-actions a.lang-btn.mobile-lang {
-    display: none !important;
-}
-
-/* زر اللغة بجانب اللوجو مخفي في الكمبيوتر */
+/* الزر الجديد مخفي افتراضياً */
 .mobile-lang {
-    display: none !important;
+    display: none;
 }
 
-/* في الهاتف يظهر زر اللغة بجانب الثلاث شرطات */
-@media (max-width: 991px) {
-    .mobile-lang {
+/* في الهاتف فقط */
+@media screen and (max-width: 991px) {
+
+    /* يظهر الزر الجديد */
+    .menu-actions .mobile-lang {
         display: inline-flex !important;
         align-items: center;
         justify-content: center;
-        min-width: auto !important;
-        padding: 8px 12px !important;
-        margin: 0 10px !important;
+        min-width: auto;
+        padding: 8px 12px;
+        margin: 0 10px;
     }
 
-    /* نخفي زر اللغة الموجود داخل القائمة في الهاتف */
-    .nav-menu .lang-btn:not(.mobile-lang) {
+    /* يخفي زر القائمة القديم */
+    .nav-links .lang-btn:not(.mobile-lang) {
         display: none !important;
     }
 }
