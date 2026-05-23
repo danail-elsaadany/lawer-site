@@ -1833,3 +1833,8 @@ li{
     background: #a8843f;
     transform: translateY(-2px);
 }
+.mobile-lang {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
