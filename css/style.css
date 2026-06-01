@@ -1833,3 +1833,32 @@ li{
     background: #a8843f;
     transform: translateY(-2px);
 }
+
+/* زر الكمبيوتر */
+.desktop-lang-btn {
+    display: inline-flex;
+}
+
+/* زر الهاتف مخفي افتراضياً */
+.mobile-lang-btn {
+    display: none;
+}
+
+/* إعدادات الهاتف */
+@media screen and (max-width: 991px) {
+
+    /* إخفاء زر الكمبيوتر */
+    .desktop-lang-btn {
+        display: none !important;
+    }
+
+    /* إظهار زر الهاتف */
+    .mobile-lang-btn {
+        display: inline-flex !important;
+        align-items: center;
+        justify-content: center;
+        min-width: auto;
+        padding: 8px 12px;
+        margin: 0 10px;
+    }
+}
