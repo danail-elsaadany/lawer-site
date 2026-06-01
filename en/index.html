@@ -975,37 +975,7 @@ Office 1105, Iris Bay Tower, Business Bay, Dubai, UAE</li>
         }
     </script>
 
-<script>
-const langBtn = document.getElementById("lang-toggle");
 
-langBtn.addEventListener("click", () => {
-
-    const html = document.documentElement;
-    const currentLang = html.lang;
-
-    if(currentLang === "ar") {
-
-        html.lang = "en";
-        html.dir = "ltr";
-
-        document.querySelectorAll("[data-en]").forEach(el => {
-            el.innerHTML = el.getAttribute("data-en");
-        });
-
-
-    } else {
-
-        html.lang = "ar";
-        html.dir = "rtl";
-
-        document.querySelectorAll("[data-ar]").forEach(el => {
-            el.innerHTML = el.getAttribute("data-ar");
-        });
-
-    }
-
-});
-</script>
 </body>
 
 </html>
