@@ -123,8 +123,8 @@ $html = @"
                     <p>لا تتردد في الاتصال بنا للحصول على الدعم القانوني الفوري.</p>
                     <div style="margin-top: 40px;">
                         <p><i class="fas fa-map-marker-alt"></i> دبي، الإمارات العربية المتحدة</p>
-                        <p><i class="fas fa-phone-alt"></i> +971 000 0000 00</p>
-                        <p><i class="fas fa-envelope"></i> info@alhammadi-law.com</p>
+                        <p><i class="fas fa-phone-alt"></i> +971 564 6688 07</p>
+                        <p><i class="fas fa-envelope"></i> info@lawservice.ae</p>
                     </div>
                 </div>
                 <div class="contact-form">
@@ -180,8 +180,8 @@ $html = @"
                 <div>
                     <h4 class="footer-title">التواصل</h4>
                     <ul class="footer-contact">
-                        <li><i class="fas fa-phone-alt"></i> +971 000 0000 00</li>
-                        <li><i class="fas fa-envelope"></i> info@alhammadi-law.com</li>
+                        <li><i class="fas fa-phone-alt"></i> +971 564 6688 07</li>
+                        <li><i class="fas fa-envelope"></i> info@lawservice.ae</li>
                         <li><i class="fas fa-map-marker-alt"></i> دبي، الإمارات العربية المتحدة</li>
                     </ul>
                 </div>
@@ -193,7 +193,7 @@ $html = @"
     </footer>
 
     <!-- WhatsApp Floating Button -->
-    <a href="https://wa.me/971000000000" target="_blank" class="whatsapp-float">
+    <a href="https://wa.me/971564668807" target="_blank" class="whatsapp-float">
         <i class="fab fa-whatsapp"></i>
     </a>
 
