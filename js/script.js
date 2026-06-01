@@ -112,7 +112,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Redirect all WhatsApp Links to Primary WhatsApp Number
         const cleanWaNumber = CONTACT_INFO.whatsapp_primary.replace('+', '');
         document.querySelectorAll('a[href]').forEach(link => {
-            if (link.href.includes('wa.me') && !link.hasAttribute('data-contact-handled')) {
+            if (link.href.includes('wa.me')) {
                 // If it explicitly has a text search param, keep it, otherwise generic message
                 const urlObj = new URL(link.href);
                 let textParam = urlObj.searchParams.get('text');
