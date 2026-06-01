@@ -1,6 +1,7 @@
 const CONTACT_INFO = {
     whatsapp_primary: "+971564668807",
     whatsapp_secondary: "+971564668807",
+    email: "info@lawservice.ae",
     email: "Daniel@lawservice.ae",
     address: "Office 1105, Iris Bay Tower, Business Bay, Dubai, UAE"
 };
