@@ -1,6 +1,6 @@
 const CONTACT_INFO = {
-    whatsapp_primary: "+447839199992",
-    whatsapp_secondary: "+971544428286",
+    whatsapp_primary: "+971564668807",
+    whatsapp_secondary: "+971564668807",
     email: "Daniel@lawservice.ae",
     address: "Office 1105, Iris Bay Tower, Business Bay, Dubai, UAE"
 };
@@ -97,11 +97,11 @@ document.addEventListener('DOMContentLoaded', () => {
         let node;
         while (node = walker.nextNode()) {
             let text = node.nodeValue;
-            if (text.includes('info@alhammadi-law.com')) {
-                node.nodeValue = text.replace('info@alhammadi-law.com', CONTACT_INFO.email);
+            if (text.includes('info@lawservice.ae')) {
+                node.nodeValue = text.replace('info@lawservice.ae', CONTACT_INFO.email);
             }
-            if (text.includes('+971 000 0000 00')) {
-                node.nodeValue = text.replace('+971 000 0000 00', CONTACT_INFO.whatsapp_secondary);
+            if (text.includes('+971 564 6688 07')) {
+                node.nodeValue = text.replace('+971 564 6688 07', CONTACT_INFO.whatsapp_secondary);
             }
             if (text.includes('دبي، الإمارات العربية المتحدة') || text.includes('Dubai, United Arab Emirates')) {
                 node.nodeValue = text.replace('دبي، الإمارات العربية المتحدة', CONTACT_INFO.address).replace('Dubai, United Arab Emirates', CONTACT_INFO.address);
