@@ -192,7 +192,10 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     applyGlobalContactData();
-
+document.querySelectorAll('a[href*="wa.me"]').forEach(link => {
+    link.href = "https://wa.me/971564668807";
+    link.removeAttribute("data-contact-handled");
+});
 });
 
 // HERO SLIDER AUTO SWITCH
