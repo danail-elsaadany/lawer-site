@@ -193,7 +193,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     applyGlobalContactData();
 document.querySelectorAll('a[href*="wa.me"]').forEach(link => {
-    link.href = "https://wa.me/971564668807";
+    link.setAttribute("href", "https://wa.me/971564668807");
+    link.onclick = null;
     link.removeAttribute("data-contact-handled");
 });
 });
