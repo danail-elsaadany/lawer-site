@@ -140,7 +140,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (email) waText += `البريد الإلكتروني: ${email}\n`;
                 if (message) waText += `الرسالة/الاستفسار: ${message}\n`;
 
-                const waUrl = `https://wa.me/${cleanWaNumber}?text=${encodeURIComponent(waText)}`;
+                const waUrl = `https://wa.me/971564668807?text=${encodeURIComponent(waText)}`;
                 window.open(waUrl, '_blank');
             });
             form.setAttribute('data-contact-handled', 'true');
