@@ -382,4 +382,5 @@ if (langBtn) {
     } else {
         langBtn.textContent = "العربية";
     }
+    
 }
