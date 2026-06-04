@@ -259,6 +259,7 @@ html[dir="ltr"] .mega-menu-grid a:hover {
     display: flex;
     align-items: center;
     gap: 15px;
+    margin-left:auto;
 }
 
 
