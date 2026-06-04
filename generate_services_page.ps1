@@ -47,7 +47,7 @@ $html = @"
     <header>
         <div class="nav-container">
             <div class="logo">
-                <a href="index.html">
+                <a href="/">
                     <img src="assets/images/logo png.png" alt="جاسم الحمادي للمحاماة">
                 </a>
             </div>
@@ -55,7 +55,7 @@ $html = @"
             <div class="menu-toggle"><i class="fas fa-bars"></i></div>
             
             <ul class="nav-links">
-                <li><a href="index.html">الصفحة الرئيسية</a></li>
+                <li><a href="/">الصفحة الرئيسية</a></li>
                 <li class="dropdown">
                     <a href="about.html">من نحن <i class="fas fa-chevron-down"></i></a>
                     <div class="dropdown-content">
