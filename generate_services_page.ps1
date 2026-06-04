@@ -52,7 +52,15 @@ $html = @"
                 </a>
             </div>
             
-            <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+            <a href="en/index.html" class="lang-btn desktop-lang-btn">
+    English
+</a>
+
+<a href="en/index.html" class="lang-btn mobile-lang-btn">
+    English
+</a>
+
+<div class="menu-toggle"><i class="fas fa-bars"></i></div>
             
             <ul class="nav-links">
                 <li><a href="/">الصفحة الرئيسية</a></li>
