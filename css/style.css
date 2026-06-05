@@ -1887,3 +1887,12 @@ li{
     display: none !important;
   }
 }
+@media (max-width: 768px) {
+
+    .hero-bg {
+        background-image: url('../assets/images/mobile-hero.jpg');
+        background-size: cover;
+        background-position: center center;
+    }
+
+}
