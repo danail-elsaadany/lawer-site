@@ -1887,18 +1887,9 @@ li{
     display: none !important;
   }
 }
-@media (max-width: 768px) {
-
+@media screen and (max-width: 1200px) {
     .hero-bg {
-        background-image: url('../assets/images/mobile-hero.jpg');
-        background-size: cover;
-        background-position: center center;
-    }
-
-}
-@media screen and (max-width: 991px) {
-    .hero-bg {
-        background-image: url('../assets/images/mobile-hero.jpg?v=2') !important;
+        background-image: url('../assets/images/mobile-hero.jpg?v=1000') !important;
         background-size: cover !important;
         background-position: center center !important;
     }
