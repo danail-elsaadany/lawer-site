@@ -1896,3 +1896,10 @@ li{
     }
 
 }
+@media screen and (max-width: 991px) {
+    .hero-bg {
+        background-image: url('../assets/images/mobile-hero.jpg?v=2') !important;
+        background-size: cover !important;
+        background-position: center center !important;
+    }
+}
