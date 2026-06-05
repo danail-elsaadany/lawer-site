@@ -187,7 +187,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
             }
         }, { threshold: 0.3 });
-س
+
         statsObserver.observe(statsSection);
     }
 
