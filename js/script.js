@@ -186,7 +186,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     updateCount();
                 });
             }
-        }, { threshold: 0.3 });
+        }, { threshold: 0 });
 
         statsObserver.observe(statsSection);
     }
