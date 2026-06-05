@@ -190,6 +190,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
         statsObserver.observe(statsSection);
     }
+    setTimeout(() => {
+    if (!counted) {
+        counted = true;
+        statItems.forEach(item => item.classList.add('animate-in'));
+
+        statNumbers.forEach(num => {
+            const target = +num.getAttribute('data-target');
+            const prefix = num.getAttribute('data-prefix') || '';
+            const suffix = num.getAttribute('data-suffix') || '';
+            num.innerText = prefix + target.toLocaleString('en-US') + suffix;
+        });
+    }
+}, 1000);
 
     applyGlobalContactData();
 document.querySelectorAll('a[href*="wa.me"]').forEach(link => {
